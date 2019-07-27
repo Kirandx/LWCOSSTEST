@@ -14,7 +14,7 @@
     "engines": {
         "node": ">=10.0.0"
     },
-    "homepage": "https://github.com/Arjun/testlwcoss",
+    "homepage": "https://github.com/Arjun/LWCOSSTEST",
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
@@ -47,6 +47,8 @@
         "test:unit:coverage": "lwc-services test --coverage",
         "test:unit:debug": "lwc-services test --debug",
         "test:unit:watch": "lwc-services test --watch",
-        "watch": "lwc-services watch"
+        "watch": "lwc-services watch",
+        "predeploy":"npm run watch",
+        "deploy":"gh-pages -d build"
     }
 }
